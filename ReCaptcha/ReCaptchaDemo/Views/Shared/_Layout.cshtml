@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery-1.11.1.js"></script>
+    <script src="~/Content/js/Common.js"></script>
+
+</head>
+<body class="container">
+    <div class="">
+        <h1>Recaptcha Demo <small>.Net Recaptcha with MVC and Responsive Design with bootstrap</small></h1>
+    </div>
+
+    <div>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="container-fluid">
+                @RenderBody()
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="left">
+                <p>MVC </p>
+            </div>
+        </div>
+    </footer>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
